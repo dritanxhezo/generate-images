@@ -1,0 +1,45 @@
+
+$body-bgcolor: whitesmoke;
+$section-bgcolor: white;
+$textcolor: black;
+$fontsize: 12px;
+
+body {
+	background-color: $body-bgcolor;
+	color: $textcolor;
+  font-size: $fontsize;
+  font-family: sans-serif;
+	padding: 10px;
+}
+
+.container {
+	display: grid;
+	gap: 20px;
+	grid-template-rows: 100px auto auto;
+	align-content: space-evenly;
+}
+
+.section {
+  background-color: $section-bgcolor;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+}
+
+.section-header {
+	margin-top: -10px;
+	margin-left: 20px;
+	padding: 3px 15px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	background: whitesmoke;
+	width: 110px;
+	text-align: left;
+}
+
+.image-container {
+    padding: 10px;
+		display: grid;
+		grid-auto-flow: column;
+		gap: 20px;
+		align-content: space-evenly;
+}
